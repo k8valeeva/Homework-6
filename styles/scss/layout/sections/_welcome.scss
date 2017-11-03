@@ -1,0 +1,41 @@
+.welcome-section {
+  padding: 0;
+  height: 100vh;
+  background: url("../../img/bg-welcome.jpg") 50% 0 no-repeat;
+  @include background-size(cover);
+  color: $text-color;
+  position: relative;
+}
+.welcome-info{
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  @include display-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font: 32px 'PlayfairDisplay-Black', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+  .underline{
+   background: $text-color;
+    margin-bottom: 30px;
+  }
+    p{
+      font-family: $base-font-family;
+      margin-bottom: 50px;
+  }
+  .btn{
+    color: $text-color;
+    border: 1px solid $text-color;
+
+    &:hover {
+      border: 1px solid $brand-color;
+      color: $brand-color;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.expertise{
+  text-align: center;
+  h3{
+    color: $text-color-secondary;
+  }
+  span{
+    color: #78767c;
+    line-height: 35px;
+    display: block;
+    margin-bottom: 20px;
+    font-family: $secondary-font-family;
+  }
+  .underline{
+    background: #c6c4c9;
+    margin-bottom: 50px;
+  }
+}
+.list-expertise{
+  @include display-flex;
+  flex-wrap: wrap;
+
+  li{
+    width: 320px;
+    padding: 40px 30px 40px ;
+    box-sizing: border-box;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3) {
+      border-bottom: 0;
+    }
+
+    &:nth-last-child(3n+1) {
+      border-right: 0;
+    }
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 54px;
+      height: 54px;
+      margin-bottom: 35px;
+      background: url("../../img/expertise-set.png") no-repeat;
+    }
+
+    h4{
+      color: $text-color-secondary;
+      margin-bottom: 25px;
+    }
+    p{
+      color: #78767c;
+    }
+  }
+}

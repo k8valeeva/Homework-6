@@ -1,0 +1,59 @@
+.team {
+  background: url("../../img/bg-team.jpg") 50% 0 no-repeat;
+  @include background-size(cover);
+  color: $text-color;
+  position: relative;
+  text-align: center;
+
+  h3 {
+    font-family: 'PlayfairDisplay-Bold', sans-serif;
+  }
+  span {
+    display: block;
+    font-family: $secondary-font-family;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .underline{
+    background: #655c80;
+    margin-bottom: 50px;
+  }
+  .join-us{
+    margin-bottom: 30px;
+  }
+  .btn {
+    color: $text-color;
+    border: 1px solid $text-color;
+
+    &:hover {
+      border: 1px solid #00e0d0;
+      color: #00e0d0;
+    }
+
+  }
+}
+.our-team {
+  @include display-flex;
+  justify-content: space-around;
+  margin-bottom: 65px;
+
+  li {
+    width: 220px;
+
+    .team-foto {
+      height: 229px;
+      width: 220px;
+    }
+
+  .team-member{
+    border: 1px solid #79768d;
+    border-top: 0;
+    padding: 15px 0;
+
+    p{
+      font: 13px/20px $base-font-family;
+      color: #b2b0c0;
+      }
+    }
+  }
+}

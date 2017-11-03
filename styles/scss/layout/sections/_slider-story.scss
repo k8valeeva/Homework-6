@@ -1,0 +1,21 @@
+.slider-story{
+  height: 100vh;
+  background: url("../../img/bg-slider-story.jpg") 50% 0 no-repeat;
+  @include background-size(cover);
+  color: $text-color;
+  position: relative;
+  box-sizing: border-box;
+
+  .slider-play{
+    padding-top: 135px;
+    background: url("../../img/btn-play.png") 20px 0 no-repeat;
+    position: absolute;
+    left: 45%;
+    transform: translateY(140%);
+    z-index: 999;
+  }
+    p{
+      text-transform: uppercase;
+      font: 16px 'Roboto-Black', sans-serif;
+    }
+  }

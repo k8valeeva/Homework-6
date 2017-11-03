@@ -1,0 +1,29 @@
+.quote{
+  background: url("../../img/bg-quote.jpg") 50% 0 no-repeat;
+  @include background-size(cover);
+  height: 100vh;
+  color: $text-color;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+
+  .q::before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 26px;
+    background: url("../../img/q.png") no-repeat;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+  p{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #b2b0c0;
+  }
+  span{
+    color: #b2b0c0;
+    font-size: 13px;
+  }
+}

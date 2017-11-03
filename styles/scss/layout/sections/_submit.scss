@@ -1,0 +1,54 @@
+.submit-flex {
+  @include display-flex;
+  justify-content: space-between;
+
+  .form {
+    width: 43%;
+
+    h3 {
+      margin-bottom: 35px;
+      color: $text-color-secondary;
+    }
+  }
+}
+.subscribe{
+  list-style: none;
+
+  li{
+    width: 100%;
+
+    textarea{
+      resize: none;
+      height: 200px;
+    }
+  }
+  .btn{
+    color: $text-color-secondary;
+    border: 1px solid $text-color-secondary;
+
+    &:hover {
+      border: 1px solid $brand-color;
+      color: $brand-color;
+    }
+  }
+}
+
+.clients{
+  width: 50%;
+
+  h3{
+    margin-bottom: 45px;
+    color: $text-color-secondary;
+  }
+  .list-clients{
+    @include display-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    li{
+      width: 180px;
+      margin-bottom: 40px;
+    }
+  }
+}

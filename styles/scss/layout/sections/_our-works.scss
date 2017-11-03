@@ -1,0 +1,46 @@
+.our-works {
+  text-align: center;
+
+  .flex-our-works {
+    @include display-flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    h3 {
+      color: $text-color-secondary;
+    }
+    a {
+      color: $text-color-secondary;
+
+      &:hover{
+        color: $brand-color;
+      }
+    }
+  }
+  .btn {
+    color: $text-color-secondary;
+    border: 1px solid $text-color-secondary;
+
+    &:hover {
+      border: 1px solid $brand-color;
+      color: $brand-color;
+    }
+  }
+  .list-works {
+    @include display-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 70px;
+
+    li {
+      width: calc(100% / 6);
+      max-width: 265px;
+
+      img {
+        max-width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}

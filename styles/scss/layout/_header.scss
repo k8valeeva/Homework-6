@@ -1,0 +1,32 @@
+.header{
+  padding-top: 15px;
+  @include display-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo{
+    max-height: 50px;
+    max-width: 128px;
+    overflow: hidden;
+  }
+}
+
+.main-nav{
+  li{
+    display: inline-block;
+    margin-left: 25px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+    a{
+      font: 13px 'Roboto-Black', sans-serif;
+      text-transform: uppercase;
+      color: $text-color;
+
+      &:hover{
+        color: $brand-color;
+      }
+    }
+  }
+}
